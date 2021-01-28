@@ -1,0 +1,631 @@
+@charset "utf-8";
+
+/* =Reset default browser CSS. 
+-------------------------------------------------------------- */
+/*  HTML5  Boilerplate  */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+table { border-collapse: collapse; border-spacing: 0; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+input, select { vertical-align: middle; }
+
+body { font:13px/1.231 sans-serif; *font-size:small; } 
+select, input, textarea, button { font:99% sans-serif; }
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+html { overflow-y: scroll; }
+a:hover, a:active { outline: none; }
+ul, ol { margin-: 2em; }
+ol { list-style-type: decimal; }
+nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
+small { font-size: 85%; }
+strong, th { font-weight: bold; }
+td { vertical-align: top; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 15px; }
+textarea { overflow: auto; }
+.ie6 legend, .ie7 legend { margin-left: -7px; } 
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
+button, input, select, textarea { margin: 0; }
+input:valid, textarea:valid   {  }
+input:invalid, textarea:invalid { border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red; }
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+::-moz-selection{ background: #106b6e; color:#fff; text-shadow: none; }
+::selection { background:#106b6e; color:#fff; text-shadow: none; }
+a:link { -webkit-tap-highlight-color: #106b6e;
+text-decoration:none; }
+
+button {  width: auto; overflow: visible; }
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+body, select, input, textarea {  color: #444; }
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+a, a:active, a:visited { color: #ffffff; }
+a:hover { color: #cc3399; }
+
+/* =Layout
+-------------------------------------------------------------- */
+html {
+	background: #262626;
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+}
+h2 {
+	padding-top: 40px;
+	color: #fff;
+	font: 24px 'MicrogrammaDMedium', Arial, sans-serif;
+}
+.wrapper {
+	position: relative;
+	margin: 0 auto;
+	width: 960px;
+}
+header.background-header {
+	background: #Fdfeff;
+	width: auto;
+	height: 175px;
+}
+header h1.logo {
+	background: url("../img/logo2.png") no-repeat;
+	float: left;
+	display: block;
+	margin: 20px; 
+	width: 211px;
+	height: 152px;
+}
+header h1.logo a { 
+	display: block; 
+	width: 121px;
+	height: 152px;
+}
+
+/* =Navigation
+-------------------------------------------------------------- */
+nav.secondary-menu {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: #ec224b;
+}
+	nav.secondary-menu ul { text-decoration: none; }
+	nav.secondary-menu li{
+		float: left;
+		padding: 10px 20px;
+		list-style: none;
+	}
+	nav.secondary-menu li a {
+		color: #999;
+		font: 12px 'MicrogrammaDMedium', Arial, sans-serif;
+	}
+	nav.secondary-menu  li a:hover { color: #ec224b; }
+	nav.secondary-menu li.active { background: url("../img/pattern.png") repeat; }
+	nav.secondary-menu li.active a { color: #fff; }
+nav.primary-menu{
+	position: absolute;
+	z-index: 99;
+	right: 17px;
+	top: 100px;
+	color: #ec224b;
+}
+	nav.primary-menu ul { list-style-type: none; }
+	nav.primary-menu li {
+		position: relative;
+		float: left;
+		list-style: none;
+	}
+	nav.primary-menu li a {
+		display: block;
+		padding: 10px 20px;
+		color: #999;
+		font: 13px 'MicrogrammaDMedium', Arial, sans-serif;
+		text-decoration: none;
+	}
+	nav.primary-menu li.padding { padding: 0 0 30px 10px; }
+	nav.primary-menu li a:hover{
+		color: #ec224b;
+		background: url("../img/pattern.png") repeat;
+	}
+	nav.primary-menu li.active { background: url("../img/pattern.png") repeat; }
+	nav.primary-menu li.active a { color: #fff; }
+	nav.primary-menu ul li:hover {
+			color: #999;
+			text-align: center;
+	}
+		nav.primary-menu li ul.expand { 
+			display: none; 
+			clear: both;
+
+			/* 10px Box Shadow */
+			box-shadow: 0 0 10px 0 #010101;
+			-moz-box-shadow: 0 0 10px 0 #010101;
+		    -webkit-box-shadow: 0 0 10px 0 #010101;
+		}
+		nav.primary-menu li:hover ul.expand {
+		    position: absolute;
+		    display: block;
+		}
+		nav.primary-menu li:hover  ul.expand li a {
+			border-top: 1px solid #8c8c8c;
+			width: 100px;
+		    display: block;
+			padding: 8px 10px;
+			color: #fff;
+			text-align: left;
+			font: 12px Arial, sans-serif;
+			
+			/* 2px Box Shadow simulate border */
+			-moz-box-shadow: 0px 2px 0px #a6a6a6;
+			-webkit-box-shadow:  0px 2px 0px #a6a6a6;
+    	    box-shadow:  0px 2px 0px #a6a6a6;
+		}
+		nav.primary-menu li:hover  ul.expand li:last-child a {
+			
+			/* Remove Box Shadow */		
+			-moz-box-shadow: none;
+			-webkit-box-shadow:  none;
+    	    box-shadow:  none;
+		}
+		nav.primary-menu li:hover ul.expand li a:hover {
+			color: #ec224b;
+			background:none;
+		}
+		
+		nav.primary-menu li:hover  ul.expand li a {
+			background: url("../img/arrows-menu.png") no-repeat 0px 10px;
+			display: block;
+			margin-left: 15px; 
+		}
+		nav.primary-menu li:hover  ul.expand li a:hover {
+			background: url("../img/arrows-menu.png") no-repeat 0px -20px;
+		}
+		nav.primary-menu .left {
+			background: #999;
+			margin-top: 20px;
+		}
+	
+/* =Utilities
+-------------------------------------------------------------- */
+.clearfix { clear: both; }
+
+hr.menu {
+	background: #a6a6a6;
+	padding: 0;
+	margin: 2px 0 2px 15px;
+	width: 100px;
+}
+.left-align { float: left; }
+.right-align { float: right; }
+
+/* =Content & Banner
+-------------------------------------------------------------- */
+.content {
+	background: #Fefefe;
+	width: auto;
+	height: 400px;
+}
+.banner-wrapper{
+	position: relative;
+	padding-top: 25px;
+}
+	.banner-background {
+		border: 1px solid #999;
+		width: 920px;
+		height: 350px;
+		
+		/* 10px Box Shadow */
+		box-shadow: 0 0 10px 0 #010101;
+		-moz-box-shadow: 0 0 10px 0 #010101;
+	    -webkit-box-shadow: 0 0 10px 0 #010101;
+	}
+	.banners {
+		position: relative;
+		width: 920px;
+		height: 350px;
+		overflow: hidden;
+	}
+	.banners .banner { position: relative; }
+	.banner-wrapper .banners .banner { float: left; }
+		.banner-wrapper .banners .items {
+			position: absolute;
+			width: 20000em;
+		}		
+	.banner-wrapper .banner-image {
+		float: left;
+		width: 925px;
+	}
+	.banner-wrapper .banner-content {
+		float: left;
+		width: 370px;
+		margin: 40px 30px 10px 30px;
+	}
+
+	.banner-wrapper nav {
+		position: absolute;
+		z-index: 95;
+		
+		}
+	.banner-wrapper nav.right-nav {
+		right: 16px;
+		top: 180px;
+	}
+		.banner-wrapper nav.right-nav a {
+			background: #999; 
+			display: block;
+			width: 20px;
+			height: 40px;
+			color: #fff;
+			font-size: 10px;
+			text-decoration: none;
+			text-align: center;
+			cursor: pointer;
+		}
+		.banner-wrapper nav.right-nav a span {
+			background: url("../img/arrow-right.png") no-repeat center left;
+			position: absolute;
+			top: 13px;
+			left: 3px;
+			margin: 2px 0 0 5px;
+			width: 5px;
+			height: 9px;
+		}
+		.banner-wrapper nav.right-nav a:hover { background: #ec224b; }
+		.banner-wrapper nav.left-nav {
+			left: -23px;
+			top: 180px;
+		}
+		.banner-wrapper nav.left-nav a {
+			background: #999;
+			position: relative;
+			display: block;
+			color: #fff;
+			width: 20px;		
+			height: 40px;
+			font-size: 10px;
+			text-decoration: none;
+			cursor: pointer;
+		}
+		.banner-wrapper nav.left-nav a span { 
+			background: url("../img/arrow-left.png") no-repeat center left;
+			position: absolute;
+			top: 13px;
+			left: 3px;
+			margin: 2px 0 0 5px;
+			width: 5px;
+			height: 9px;
+		}
+		.banner-wrapper nav.left-nav a:hover { background: #ec224b; }
+		
+/* =Text
+-------------------------------------------------------------- */
+.left-text {
+	float: left;
+	width: 450px;
+}
+	.left-text h3 {
+		color: #ec234c;
+		font: 18px 'MyriadProRegular', Arial, sans-serif;
+	
+		/* 1px Text Shadow (black for readability)  */
+	   	 text-shadow: 0px 1px #000;  
+	}
+	.left-text p {
+		padding-bottom: 20px;
+		color: #ccc;
+		font: 13px/20px 'MyriadProRegular', Arial, sans-serif;
+	
+		/* 1px Text Shadow (black for readability)  */
+	    text-shadow: 0px 1px #000;  
+	}
+	.left-text ul {
+		color: #ccc;
+		font: 13px/20px 'MyriadProRegular',  Arial, sans-serif;
+		list-style-position: inside;
+
+		/* 1px Text Shadow (black for readability)  */
+   	    text-shadow: 0px 1px #000;  
+	}
+	.left-text ul li { padding-bottom: 20px; }
+.right-text {
+	float: right;
+	width: 450px;
+}
+	.right-text h3 {
+		color: #ec234c;
+		font: 18px 'MyriadProRegular',  Arial, sans-serif;
+
+		/* 1px Text Shadow (black for readability)  */
+   	    text-shadow: 0px 1px #000;  
+	}
+	.right-text p {
+		padding-bottom: 20px;
+		font: 13px/20px 'MyriadProRegular',  Arial, sans-serif;
+		color: #ccc;
+
+		/* 1px Text Shadow (black for readability)  */
+   	    text-shadow: 0px 1px #000;  
+	}
+	.right-text ul {
+		padding-top: 20px;
+		color: #ccc;
+		font: 13px/20px 'MyriadProRegular',  Arial, sans-serif;
+
+		/* 1px Text Shadow (black for readability)  */
+   	    text-shadow: 0px 1px #000;  
+	}
+	.right-text ul li { padding-bottom: 20px; }
+hr {
+	background: #343434;
+	margin-left: -30px;
+	border-top: 1px solid #1a1a1a;
+}
+.footer { padding-bottom: 30px;}
+	.footer .left-foot {
+		float: left;
+		color: #666;
+		font: 10px 'MyriadProRegular', Arial, sans-serif;
+	}
+	.footer .right-foot {
+		float: right;
+		color: #999;
+		font: 10px 'MyriadProRegular',  Arial, sans-serif;
+	}
+	.footer a { color: #999; }
+	.footer a:hover { text-decoration: underline; }
+
+/* =Contact Form
+-------------------------------------------------------------- */
+.contact-form .input {
+	float: left;
+	clear: both;
+	margin: 5px 0;
+}
+	.contact-form .input span {
+		position: absolute;
+		z-index: 99;
+		padding: 5px;
+		margin-left: 3px;
+		color: #666 !important;
+		font: 12px/20px 'MyriadProRegular', Arial, sans-serif;
+		cursor: text;
+	}
+	.contact-form .input input, .input textarea {
+		position: relative;
+		margin: 0;
+		padding: 6px;
+		border-width: 1px;
+		height: 15px;
+		color: #666 !important;
+		font: 12px/20px 'MyriadProRegular', Arial, sans-serif;
+		outline: none;
+	}	
+	.contact-form input {
+		background: #ccc;
+		margin-bottom: 10px;
+		width: 460px;
+		height: 30px;
+		color: #666 !important;
+}
+.contact-form textarea {
+	background: #ccc;
+	float: right;
+	width: 450px;
+	height: 95px;
+	resize: none;
+}
+.contact-form .submit {
+	background: #999;
+	clear: both;
+	float: right;
+	border: 0;
+	padding: 0 20px;
+	margin: 5px 0 40px 0;
+	color: #ec224b;
+	font: 12px/30px 'MyriadProRegular', Arial, sans-serif;
+	text-align: center;
+	
+	/* 10px Box Shadow */
+	box-shadow: 0 0 10px 0 #010101;
+	-moz-box-shadow: 0 0 10px 0 #010101;
+	-webkit-box-shadow: 0 0 10px 0 #010101;
+}
+.contact-form button span { font-size: 9px;}
+.contact-form button:hover { text-decoration: underline; }
+	
+h3 {
+	color: #ec224b;
+	font: 18px 'MyriadProRegular', Arial, sans-serif;
+
+	/* 1px Text Shadow (black for readability)  */
+    text-shadow: 0px 1px #000;
+}
+p {
+	padding-bottom: 35px;
+	color: #ccc;
+	font: 13px/20px 'MyriadProRegular';
+
+	/* 1px Text Shadow (black for readability)  */
+    text-shadow: 0px 1px #000;
+}
+.gallery a { 
+	position: relative;
+	display: inline-block;
+	height: auto;
+	width: auto;
+	margin: 1px 10px 40px 0;
+}
+.gallery img {
+	position: relative;
+	border: 1px solid #999;
+
+	/* 10px Box Shadow */
+	box-shadow: 0 0 10px 0 #010101;
+	-moz-box-shadow: 0 0 10px 0 #010101;
+	-webkit-box-shadow: 0 0 10px 0 #010101;
+}
+.gallery img:first-child {	margin-left: 0px; }
+.gallery a span {
+	background: #fff url("../img/magnify.png") no-repeat center center;
+	position: absolute;
+	z-index: 99;
+	display: block;
+	bottom: 10px;
+	right: 6px;
+	border: 1px solid #999;
+	width: 20px;
+	height: 20px;
+
+	/* 10px Box Shadow */
+	box-shadow: 0 0 10px 0 #010101;
+	-moz-box-shadow: 0 0 10px 0 #010101;
+	-webkit-box-shadow: 0 0 10px 0 #010101;
+}
+
+
+.padd{
+	margin : 10px 0px 10px 0px;
+}
+
+.paddi{
+	list-style-type : none;	
+}
+.paddi li{
+	color : #FFFFFe;
+}
+.paddi span{
+	color : #801515;
+}
+
+
+
+table {
+	background: #f5f5f5;
+	border-collapse: separate;
+	box-shadow: inset 0 1px 0 #fff;
+	font-size: 12px;
+	line-height: 24px;
+	margin: 30px auto;
+	text-align: left;
+	width: 800px;
+}	
+
+th {
+	background: url(http://jackrugile.com/images/misc/noise-diagonal.png), linear-gradient(#777, #444);
+	border-left: 1px solid #555;
+	border-right: 1px solid #777;
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #333;
+	box-shadow: inset 0 1px 0 #999;
+	color: #fff;
+  font-weight: bold;
+	padding: 10px 15px;
+	position: relative;
+	text-shadow: 0 1px 0 #000;	
+}
+
+th:after {
+	background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+	content: '';
+	display: block;
+	height: 25%;
+	left: 0;
+	margin: 1px 0 0 0;
+	position: absolute;
+	top: 25%;
+	width: 100%;
+}
+
+th:first-child {
+	border-left: 1px solid #777;	
+	box-shadow: inset 1px 1px 0 #999;
+}
+
+th:last-child {
+	box-shadow: inset -1px 1px 0 #999;
+}
+
+td {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #e8e8e8;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 10px 15px;
+	position: relative;
+	transition: all 300ms;
+}
+
+td:first-child {
+	box-shadow: inset 1px 0 0 #fff;
+}	
+
+td:last-child {
+	border-right: 1px solid #e8e8e8;
+	box-shadow: inset -1px 0 0 #fff;
+}	
+
+tr {
+	background: url(http://jackrugile.com/images/misc/noise-diagonal.png);	
+}
+
+tr:nth-child(odd) td {
+	background: #f1f1f1 url(http://jackrugile.com/images/misc/noise-diagonal.png);	
+}
+
+tr:last-of-type td {
+	box-shadow: inset 0 -1px 0 #fff; 
+}
+
+tr:last-of-type td:first-child {
+	box-shadow: inset 1px -1px 0 #fff;
+}	
+
+tr:last-of-type td:last-child {
+	box-shadow: inset -1px -1px 0 #fff;
+}	
+
+tbody:hover td {
+	color: transparent;
+	text-shadow: 0 0 3px #aaa;
+}
+
+tbody:hover tr:hover td {
+	color: #444;
+	text-shadow: 0 1px 0 #fff;
+}

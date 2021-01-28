@@ -1,0 +1,16 @@
+
+#register .short{
+	color:#FF0000;
+}
+
+#register .weak{
+	color:#E66C2C;
+}
+
+#register .good{
+	color:#2D98F3;
+}
+
+#register .strong{
+	color:#006400;
+}

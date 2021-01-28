@@ -1,0 +1,49 @@
+/*left to right css */
+body{
+  direction: ltr
+}
+
+div.arrow, #follow-home, span.dropcap {
+  float: left
+}
+
+#contact{
+  float: right
+}
+
+#contact h1 {
+  text-align: right
+}
+
+.layout-cell, .content-layout-row, div.testimonial p, div.spotlight p {
+  text-align: left
+}
+
+#list, .post{
+  -moz-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out
+}
+
+.postheadericons .comment{right: 0}
+.post ul li, .post ol ul li {
+  padding: 0 0 0 25px;
+  background-position: left center;
+  line-height: 1.4em
+}
+
+div#hornav li div {left: 0;}
+
+span.notice, span.feed, span.hot, span.help, span.new, span.display, span.download, span.shout, span.alarm, span.time, span.notice-large, span.feed-large, span.hot-large, span.help-large, span.new-large, span.display-large, span.download-large, span.shout-large, span.alarm-large, span.time-large {
+  background-position: 2% 50%;
+  line-height: 1.4em !important
+}
+
+div.spotlight p {
+  padding: 40px 0 20px 30px !important
+}
+
+.apple_overlay .close {
+  right: 5px
+}

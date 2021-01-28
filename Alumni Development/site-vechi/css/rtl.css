@@ -1,0 +1,222 @@
+/*right to left css *//*import google fonts*/
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);  
+h1, h2, h3, h4, h5, h6, legend,.feature-title,.t, span.dropcap, .highlight-bold, .tour_now_title, .join_now_title, .componentheading, .spotlight-action,.edition-main,.price-tag, .show-title, h1.show-title, h1.contact, .blockheader .t, .post h2.postheader, .post h2.postheader a, .post h2.postheader, .slogan-head{
+  font-family: "Yanone Kaffeesatz", "Century Gothic", Arial, Helvetica, Sans-Serif;
+  text-shadow: none
+}
+
+body{
+  direction: rtl
+}
+
+#page-background-glare-image {
+  background-image: url('../images/background/glare_light_rtl/page_gl_1.png');
+  background-position: right top
+}
+
+.search{float: left;}
+.member_login{float: left; margin-left: 12px;}
+
+div#hornav li {float: right;}
+div#hornav ul {float: right;}
+div#hornav li div{float: none; margin: -7px -4px 0 0}
+div#hornav ul ul span {text-align: right;}
+div#hornav ul ul div {margin: -65px 190px 0 0 !important;}
+div#hornav ul ul a.parent {background: url("../images/menu/submenu-pointer-rtl.png") no-repeat scroll left center transparent;}
+div#hornav ul.icons a span {padding-right: 25px;}
+div#hornav a.special-1 span, div#hornav a.special-2 span, div#hornav a.special-3 span, div#hornav a.special-4 span, div#hornav a.special-5 span, div#hornav a.special-6 span, div#hornav a.special-7 span, div#hornav a.special-8 span {background-position: 99% 5px !important;}
+
+
+div.arrow, span.dropcap, .tour_now, .feature-icon, .footer-row .block, .gallery-set {
+  float: right
+}
+
+#contact, .forward, .backward, span.testimonial-jobtitle, #mailsent, #checkmark {
+  float: left
+}
+.login-action{
+  float:left;}
+.modal h2 {padding: 10px 45px 10px 0;
+    background: url("../images/login.png") no-repeat scroll 100% 50% transparent;}
+.modal {text-align: right; }
+  
+.form-subscr-field input, #name, #phone, #email, #company, #domains, #username, #password {
+    float: left;}
+
+h1.show-title, h1.contact, .show-text, .layout-cell, .content-layout-row, div.testimonial p, div.spotlight p, .footer-text, .footer-text p, .form-subscr-field {
+    text-align: right;
+}
+
+h1.show-title, h1.contact, .show-text, .layout-cell, .content-layout-row, div.testimonial p, div.spotlight p, .footer-text, .footer-text p, .form-subscr-field {
+    text-align: right;
+}
+  
+h1.show-title, h1.contact, .show-text, .layout-cell, .content-layout-row, div.testimonial p, div.spotlight p, .footer-text, .footer-text p, .form-subscr-field {
+  text-align: right
+}
+
+span.tour_now_mini, span.join_now_mini{
+  right: 26px
+}
+/*header, slides and slide navigation */
+span.slide-text {float: right;}
+.images, .static {float: right;}
+.slide-navi a {
+  padding: 6px
+}
+
+.slide-navi {
+  float: left;
+  margin-left: 10px
+}
+
+h1.show-title, h1.contact, .show-title {text-align: right;}
+
+.slide{
+  right: 0
+}
+
+.backward {
+  background: url("../images/body/nav_right.png") no-repeat scroll 10px 0 transparent
+}
+
+.backward:hover {
+  background: url("../images/body/nav_right_hover.png") no-repeat scroll 10px 0 transparent
+}
+
+.forward {
+  background: url("../images/body/nav_left.png") no-repeat scroll 10px 0 transparent
+}
+
+.forward:hover {
+  background: url("../images/body/nav_left_hover.png") no-repeat scroll 10px 0 transparent
+}
+
+.images, .static{
+  position: relative;
+  padding: 15px 15px 15px 30px
+}
+
+.join_now {
+  right: 0;
+  float: right
+}
+/*feature*/
+
+.feature-block{
+  margin: 0
+}
+
+.content-layout .right.styled, .content-layout .right2.styled {
+    background: url("../../../images/main/light/sidebar-l.png") repeat-y scroll right top transparent;
+}
+.content-layout .left.styled, .content-layout .left2.styled {
+    background: url("../../../images/main/light/sidebar-l.png") repeat-y scroll left top transparent;
+}
+
+.feature-row {padding-right: 16px}
+.feature-block .block {float: right}
+
+.post ol, .post ul {
+  margin: 1em 0.5em 1em 0
+}
+.postheadericons .author, .postheadericons .date, .postheadericons .category, .page-navigate .page, .page-navigate .pages, .page-navigate .current, .page-navigate .next-link, .page-navigate .next, .page-navigate .previous, .comment-post .reply, .actions .next, .actions .prev {
+    float: right;}
+.postheadericons .category-list, .postheadericons .category, .page-navigate .next, .actions .next, textarea {
+    float: left;
+}
+.postheadericons .comment {float: left; left: 0}
+/*pricing*/
+.article img, img.article {
+    margin: 4px 0 4px 10px;
+}
+.postheadericons .cat-in {
+    float: right;}
+
+.p-inner {
+  padding: 0 5px 10px 10px
+}
+
+.r-price .p-inner {
+  padding: 0 18px 10px 10px
+}
+
+.l-price .price-tag, .r-price .price-tag, .c-price .price-tag {
+  margin: 0
+}
+
+.post ul li, .post ol ul li {
+  padding: 0 22px 0 0;
+  background-position: right center
+}
+
+span.notice, span.feed, span.hot, span.help, span.new, span.display, span.download, span.shout, span.alarm, span.time, span.notice-large, span.feed-large, span.hot-large, span.help-large, span.new-large, span.display-large, span.download-large, span.shout-large, span.alarm-large, span.time-large {
+  padding: 8px 50px 8px 10px;
+  background-position: 98% 50%;
+  line-height: 1.5em !important
+}
+
+#follow-home {
+  background: url('../images/main/light/breadcrumb-tab-rtl.png') 0 0 no-repeat
+}
+
+#breadcrumbs-home {
+    background: url("../images/main/light/breadcrumb-tab-rtl.png") no-repeat scroll 0 0 transparent;
+}
+
+span.follow a, span.no-link, span.breadcrumbs a {
+    float: right;
+    padding: 0 7px 0 15px
+}
+
+div.testimonial {
+    background: url("../images/main/light/quote-rtl.png") no-repeat scroll 97% 20% transparent;
+}
+
+div.spotlight p {
+  padding: 42px 25px 0 0
+}
+
+.img-holder{
+  background-position: 40% 60%
+}
+
+.apple_overlay .close {
+  left: 9px
+}
+/*ui elements*/
+
+.spotlight-action{
+  float: left;
+  margin: -50px 0 0 20px
+}
+
+.top-button{
+  float: left;
+  text-align: left
+}
+
+.subscribe {
+  float: left;
+  margin: -12px 0 0 40px
+}
+
+#name, #phone, #email, #company, #domains, #choice {
+  float: left;
+  margin-right: 10px;
+  margin-left: 0
+}
+
+#news_message p, #message p {
+  margin-left: 70px;
+  margin-right: 0px
+}
+
+.page-navigate, .page-navigate .previous, .actions .prev, .blockcontent-body {
+    float: right;
+}
+
+ul.bullet-list li a {
+    background: url("../images/typo/bullet-2.png") no-repeat scroll 99% 8px transparent;
+    padding: 4px 22px 8px 7px;
+}

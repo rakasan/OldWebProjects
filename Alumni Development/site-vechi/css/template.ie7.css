@@ -1,0 +1,96 @@
+/* begin Box, Sheet */
+.sheet-tl{ clip: rect(auto 33px 33px auto);}
+.sheet-tr{  clip: rect(auto auto 33px 33px);}
+.sheet-bl{  clip: rect(33px 33px auto auto);}
+.sheet-br{  clip: rect(33px auto auto 33px);}
+.sheet-tc{  clip: rect(auto auto 33px auto);}
+.sheet-bc{  clip: rect(33px auto auto auto);}
+.sheet-cr{  clip: rect(auto auto auto 33px);}
+.sheet-cl{  clip: rect(auto 33px auto auto);}
+.sheet-body{  zoom: 1;}
+
+#page-background-simple-gradient, #page-background-gradient, #page-background-glare{   min-width: 100%;  left: 0;  overflow: hidden;}
+/* end Box, Sheet */
+
+/* begin Menu */
+.nav .r{  clip: rect(auto auto auto 973px);}
+/* end Menu */
+
+/* begin MenuItem */
+.menu a .r{  clip: rect(auto auto auto 400px);}
+/* end MenuItem */
+
+/* begin Layout */
+div.content-layout{  display: block;  zoom: 1;  overflow: hidden;}
+/* end Layout */
+
+/* begin Box, Block, VMenuBlock */
+.vmenublock-body{  zoom: 1;}
+/* end Box, Block, VMenuBlock */
+
+/* begin Box, Box, VMenuBlockContent */
+.vmenublockcontent-body{  zoom: 1;}
+.vmenublockcontent-body{  zoom: 1;}
+/* end Box, Box, VMenuBlockContent */
+
+/* begin Box, Block */
+.block-body{  zoom: 1;}
+/* end Box, Block */
+
+/* begin Box, BlockContent */
+.blockcontent-body{  zoom: 1;}
+/* end Box, BlockContent */
+
+/* begin Button */
+.read-on-wrapper .r{  clip: rect(auto auto auto 402px);}
+/* end Button */
+
+/* begin Box, Post */
+
+.post-body{  zoom: 1;}
+/* end Box, Post */
+
+/* begin PostContent */
+.postcontent{  height: 1%;}
+/* end PostContent */
+
+/* begin Footer */
+.footer-r{  clip: rect(auto auto auto 5px);}
+
+/* end Footer */
+
+/* begin LayoutCell, content */
+div.sidebar2{  width: auto;}
+.feature-block .block {width: 30%; display: inline;}
+div.content-layout div.layout-cell, div.content-layout div.layout-cell div.content-layout div.layout-cell
+{
+  display: block;
+  overflow: hidden;
+  float: left;
+  clear: right;
+  margin-bottom: -32000px;
+  padding-bottom: 32000px;
+}
+
+div.layout-cell div.layout-cell
+{
+  float: none;
+  clear: both;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}/* end LayoutCell, content */
+
+.content-wide{
+  width: 40% !important;
+}
+
+.checkbox, .radio {
+	margin-top: 0;
+}
+
+.backward{text-indent: 0em !important;}
+
+select {margin-top :-21px;}
+input {margin-top: -20px;} 
+.sign-up, .cool-button, .cool-button2, .read-more {padding:5px !important}
+#submit-mail{margin-top: -50px}

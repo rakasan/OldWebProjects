@@ -1,0 +1,50 @@
+body{
+	background: #FFF;
+}
+h1{
+	margin: 50px auto 0px auto;
+	color : #2B7ABD;
+	font-size : 80px;
+	text-align: center;
+}
+.wrapper{
+	width : 960px;
+	margin: 0 auto;
+}
+.image{
+	margin-left : 325px;
+	margin-top :35px;
+	margin-bottom : 20px;
+	background: url("../img/logo.png");
+	width : 320px;
+	height: 200px
+}
+i{
+	padding:0 10px;
+}
+span{
+	font-size : 30px;
+}
+.contact{
+	margin : 0 auto;
+	width  : 450px;
+}
+.con{
+	margin : 0 auto;
+	width : 50%;
+}
+.con-2{
+	margin :0 auto;
+	width: 75%;
+	font-size : 18px;
+
+}
+p{
+	text-align: center;
+	font-size : 55px;
+	color : #2B7ABD;
+	margin : 0 0 20px 0;
+}
+p.small{
+	font-size: 24px;
+}

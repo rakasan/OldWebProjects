@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="author" content="PMcamp"/>
+	<title>PMcamp</title>
+	<link rel="shortcut icon" href="obj/img/favicon.ico">
+	<link rel="apple-touch-icon" href="obj/img/apple-touch-icon.png">
+	<link rel="stylesheet" type="text/css" media="all" href="obj/css/style.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="obj/font/stylesheet.css" />
+	
+
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+</head>
+</body>
+	<div class="header">
+	<div class="wrapper">
+		<div class="logo"></div>
+		
+
+
+	</div>
+	</div>
+	<div class="wrapper">
+	
+
+	<form class="left-align">
+	<label> Please complete the following form in order to sign up for the platform</label>
+		
+		
+		<div class="clearfix"></div>
+		<label class="clearfix"><span>General info</span></label>
+		<input type="text" name= "surname" onfocus="if(this.value == 'surname') { this.value = ''; }" value ="surname" onblur="if(this.value == ''){ this.value = 'surname';}"/>
+		<input type="text" name = "forname" onfocus="if(this.value == 'forname') { this.value = ''; }" value ="forname" onblur="if(this.value == ''){ this.value = 'forname';}"/>
+		<input type="text" name ="age" onfocus="if(this.value == 'age') { this.value = ''; }" value ="age" onblur="if(this.value == ''){ this.value = 'age';}"/>
+		<input type="text" name="study_year" onfocus="if(this.value == 'study_year') { this.value = ''; }" value ="study_year" onblur="if(this.value == ''){ this.value = 'study_year';}"/>
+		<input type="text" name="speciality" onfocus="if(this.value == 'speciality') { this.value = ''; }" value ="speciality" onblur="if(this.value == ''){ this.value = 'speciality';}"/>
+		<input type="date" name ="birthday" />
+
+		<hr />
+
+		<label class="clearfix"><span>Login info</span></label>
+		<input  type="email" name="email"name="email" onfocus="if(this.value == 'email@email.com') { this.value = ''; }" value ="email@email.com" onblur="if(this.value == ''){ this.value = 'email@email.com';}"/>
+		<input id="parola" type="password" name="password" onfocus="if(this.value == 'email@email.com') { this.value = ''; }" value ="email@email.com" onblur="if(this.value == ''){ this.value = 'email@email.com';}"/>
+		<input type="password" name="password_confirm" onfocus="if(this.value == 'email@email.com') { this.value = ''; }" value ="email@email.com" onblur="if(this.value == ''){ this.value = 'email@email.com';}"/>
+		<hr class="clearfix"/>
+		<button action="sign_up.php"> Sign Up</button>
+		<div id="pswd_info">
+			<h4>Parola trebuie sa respecte urmatoarele cerinte</h4>
+			<ul>
+				<li id="litera" class="invalid">Cel putin <span>o litera</span></li>
+				<li id="capital" class="invalid">Cel putin <span>o litera capitala</span></li>
+				<li id="numar" class="invalid">Cel putin <span>un numar</span></li>
+				<li id="lungime" class="invalid">Cel putin <span>8 caractere</span></li>
+			</ul>
+		</div>
+	</form>
+
+	
+
+
+	
+	<img class="ceas" src="obj/img/ceas.png" alt="ceas" />
+	</div>
+	<div class="footer">
+		<div class="wrapper">
+		<h1 class="left">Copyright &copy PMcamp . All right reserved</h1>
+	
+		</div>
+	</div>
+	</div>
+
+<script type="text/javascript" src="obj/js/sign_up/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="obj/js/sign_up/jquery.passstrength.js"></script>
+<script>
+
+$('#parola').passStrengthify();
+$('input[type=password]').keyup(function() {
+	var pswd = $(this).val();
+	if ( pswd.length < 8 ) {
+	$('#lungime').removeClass('valid').addClass('invalid');
+} else {
+	$('#lungime').removeClass('invalid').addClass('valid');
+}
+if ( pswd.match(/[A-z]/) ) {
+	$('#litera').removeClass('invalid').addClass('valid');
+} else {
+	$('#litera').removeClass('valid').addClass('invalid');
+}
+//validate capital letter
+if ( pswd.match(/[A-Z]/) ) {
+	$('#capital').removeClass('invalid').addClass('valid');
+} else {
+	$('#capital').removeClass('valid').addClass('invalid');
+}
+//validate number
+if ( pswd.match(/\d/) ) {
+	$('#numar').removeClass('invalid').addClass('valid');
+} else {
+	$('#numar').removeClass('valid').addClass('invalid');
+}
+}).focus(function() {
+	$('#pswd_info').show();
+}).blur(function() {
+	$('#pswd_info').hide();
+});
+</script>
+</body>
+</html>
