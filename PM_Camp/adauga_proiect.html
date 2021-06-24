@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="author" content="PMcamp"/>
+	<title>PMcamp</title>
+	<link rel="shortcut icon" href="obj/img/favicon.ico">
+	<link rel="apple-touch-icon" href="obj/img/apple-touch-icon.png">
+	<link rel="stylesheet" type="text/css" media="all" href="obj/css/style.css" />
+	
+	<!--[if IE 7]>
+	<link rel="stylesheet" href="obj/style/ie7.css" type="text/css" />
+	<![endif]-->
+	<!--[if IE ]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+</head>
+</body>
+	<div class="header">
+	<div class="wrapper">
+		<div class="logo-mic"></div>
+		<a href="noutati.html"><img src="obj/img/ceas-mic.png"/></a>
+		<nav class="primary">
+			<a href="adauga_director.html">Adauga proiect</a>
+			<a href="adauga_executanti.html">Lista proiecte</a>
+			<a href="sterge_membru.html">Sterge membru</a>
+			<a href="mesaje.html">Mesaje</a>
+		</nav>
+	</div>
+	</div>
+	<div class="wrapper">
+		<div class="part-left">
+			<h1>Adauga proiect</h1>
+			<hr/>
+			<form class="adauga" method="post" id="adauga_director">
+				<label for="name" class="input">
+						<span>*Denumire proiect</span>
+						<input type="text" name="nume" id="nume" value="" />
+				</label>
+				<div class="clearfix"></div>
+				<label for="descriere" class="input">
+					<span>*Descriere proiect (max. 500 caractere)</span>
+					<textarea id="mesaj" name="mesaj"></textarea>
+				</label>
+				<div class="clearfix"></div>
+				<label for="termen limita" class="input">
+						<span>*termen limita dd/mm/year</span>
+						<input type="date" name="date" id="date" value="" />
+				</label>
+				<div class="clearfix"></div>
+				<label for="buget" class="input">
+						<span>*Buget</span>
+						<input type="text" name="buget" id="buget" value=""/>
+				</label>
+				<div class="clearfix"></div>
+				<h3>Selectati seful de echipa </h3>
+				<select>
+					<option value="1">User1</option>
+					<option value="2">User2</option>
+					<option value="3">User3</option>
+				</select>
+				<div class="clearfix"></div>
+				<input class="buton_submit" type="submit" value="Adauga" ></input>
+			</form>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum, elit nec aliquet pharetra, nulla lorem tincidunt urna, id porttitor eros arcu nec massa. Nulla in purus felis. Sed sagittis libero sit amet arcu malesuada tristique laoreet vitae libero. 
+Mauris congue commodo augue, ut porttitor eros bibendum quis!</p>
+		</div>
+			<div class="part-right">
+				<h1>Proiecte</h1>
+				<div class="accordion">
+				<ul>
+					<li>
+					<h3 class="right-part">Added by:<span> Vlad Racasan</span>
+					On:<span>20.11.2011</span></h3>
+					<h6 >Denumire proiect</h6> 
+						
+						<article>
+						<div class="task">
+							<div class="clearfix"></div>
+							<div class="stanga">
+								<h2>Task 1</h2>	
+								<p>Lorem ipsum dolor sit amet consenctur</p>
+							</div>
+							<div class="dreapta">
+							<h2>Asignat la <span> Vlad Racasan</span></h2>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="task">	
+							<div class="stanga">
+								<h2>Task 1</h2>	
+								<p>Lorem ipsum dolor sit amet consenctur</p>
+							</div>
+							<div class="dreapta">
+								<h2>Asignat la <span> Vlad Racasan</span></h2>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						</article>
+					<div class="clearfix"></div>
+					<hr/>
+					</li>
+					<li>
+					<h3 class="right-part">Added by:<span> Vlad Racasan</span>
+					On:<span>20.11.2011</span></h3>
+					<h6 >Denumire proiect</h6> 
+						
+						<article>
+						<div class="clearfix"></div>
+						<div class="stanga">
+							<h2>Task 1</h2>	
+							<p>Lorem ipsum dolor sit amet consenctur</p>
+						</div>
+						<div class="dreapta">
+							<h2>Asignat la <span> Vlad Racasan</span></h2>
+						</div>
+						</article>
+					<div class="clearfix"></div>
+					<hr/>
+					</li>
+					</ul>
+					</div>
+			</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="space"></div>
+	<div class="footer">
+		<div class="wrapper">
+		<h1 class="left">Copyright &copy PMcamp . All right reserved</h1>
+		<h1 class="right">Contact: Vlad Raca?an, Sibiu, str. Al. Petuniei nr. 12A  |  +40 752 229 631  |  <span>contact@PMcamp.ro</span></h1>
+		</div>
+	</div>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script> 
+ <script>!window.jQuery && document.write(unescape('%3Cscript src="obj/js/libs/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script> 
+ <script src="http://cdn.jquerytools.org/1.2.5/jquery.tools.min.js" type="text/javascript"></script> 
+ <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+ <script src="obj/js/libs/fancybox/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script> 
+ <script src="obj/js/libs/fancybox/jquery.easing-1.3.pack.js" type="text/javascript"></script> 
+ <script src="obj/js/libs/scrollable.autoscroll.min.js" type="text/javascript"></script> 
+ <script src="obj/js/libs/scrollable.navigator.min.js" type="text/javascript"></script> 
+ <script src="obj/js/libs/forms.js" type="text/javascript"></script> 
+ <script src="obj/js/script.js" type="text/javascript"></script>
+</body>
+</html>
