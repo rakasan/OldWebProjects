@@ -1,0 +1,104 @@
+html, body, ul, li, h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+body {
+	
+	 background: white;
+	text-align: center;
+	color: black;
+	font: 11px verdana, sans-serif;
+		background: url(images/back.gif) repeat-x;
+}
+#wrapper {
+	text-align: left;
+	margin: 15px auto;
+	width: 840px;
+	position: relative;
+
+
+	
+}
+#left-column {
+		float:left;
+	width:300px;
+}
+
+#right-column {
+		margin-left:340px;
+		
+	width:500px;
+	
+}
+#head {
+	background: url(images/header.gif) no-repeat;
+		height: 200px;
+	
+
+}
+
+
+#navbar {
+	margin: 0;
+	padding: 0;
+}
+
+#navbar li{
+	list-style-type:none;
+	position: relative;
+}
+
+#navbar li a, #navbar li a:visited {
+background: url(images/but1.gif) no-repeat;
+text-decoration: none;
+font-weight: bold;
+height: 80px;
+width: 300px;
+}
+#navbar li a span {
+	position:absolute;
+	top: 50%;
+	left: 50%;
+}
+
+#navbar li a:hover{
+background: url(images/but2.gif) no-repeat;
+color:#903;
+}
+
+#footer {
+background: url(images/fotter.gif) no-repeat;
+height: 200px;
+	clear:both;
+}
+#navbar li{list-style-type:none;}
+
+
+#navbar {
+margin: 0;
+padding: 0;
+}
+
+
+#navbar li a:link, #navbar li a:visited {
+display: block;
+text-decoration: none;
+font-weight: bold;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 20px;
+}
+
+#navbar li a:hover{
+display: block;
+text-decoration: none;
+font-weight: bold;
+
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 20px;
+color:#903;
+}
